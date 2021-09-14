@@ -16,7 +16,7 @@ cd vb-demo
 ## Build the image
 
 ```
-docker build -t HelloVB .
+docker build -t hello_vb .
 ```
 
 ## Run the image
