@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>ConsoleApp</RootNamespace>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="File.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>File.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="File.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>File.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="File.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>File.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="File.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>file.Designer.vb</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="ff.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ff.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="ff.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ff.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="File.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>File.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+</Project>
