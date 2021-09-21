@@ -34,7 +34,7 @@ jobs:
       uses: 'azure/aci-deploy@v1'
       with:
         resource-group: DockerVB6
-        dns-name-label: url-for-container
+        dns-name-label: pluribus-vb6demo
         image: ${{ secrets.ACR_SERVER }}/vbdemo:${{ github.sha }}
         registry-username: ${{ secrets.ACR_PULL_USER }}
         registry-password: ${{ secrets.ACR_PULL_TOKEN }}
