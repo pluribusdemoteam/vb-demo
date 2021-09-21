@@ -30,13 +30,13 @@ jobs:
         docker build . --file Dockerfile -t ${{ secrets.ACR_SERVER }}/vbdemo:${{ github.sha }}
         docker push ${{ secrets.ACR_SERVER }}/vbdemo:${{ github.sha }}
 
-     - name: 'Deploy to Azure Container Instances'
-          uses: 'azure/aci-deploy@v1'
-          with:
-            resource-group: DockerVB6
-            dns-name-label: url-for-container
-            image: ${{ secrets.ACR_SERVER }}/vbdemo:${{ github.sha }}
-            registry-username: ${{ secrets.ACR_PULL_USER }}
-            registry-password: ${{ secrets.ACR_PULL_TOKEN }}
-            name: vb6-demo-deploy
-            location: 'east us'
+    - name: 'Deploy to Azure Container Instances'
+      uses: 'azure/aci-deploy@v1'
+      with:
+        resource-group: DockerVB6
+        dns-name-label: url-for-container
+        image: ${{ secrets.ACR_SERVER }}/vbdemo:${{ github.sha }}
+        registry-username: ${{ secrets.ACR_PULL_USER }}
+        registry-password: ${{ secrets.ACR_PULL_TOKEN }}
+        name: vb6-demo-deploy
+        location: 'east us'
