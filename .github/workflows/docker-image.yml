@@ -14,9 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-
     - uses: azure/docker-login@v1
       with:
         login-server: ${{ secrets.ACR_SERVER }}
@@ -25,7 +22,3 @@ jobs:
     - run: |
       docker build . --file Dockerfile -t ${{ secrets.ACR_SERVER }}
       docker push ${{ secrets.ACR_SERVER }}
-      
-     
-      
-      
