@@ -40,3 +40,4 @@ jobs:
         registry-password: ${{ secrets.ACR_PULL_TOKEN }}
         name: vb6-demo-deploy
         location: 'east us'
+        os-type: Windows
