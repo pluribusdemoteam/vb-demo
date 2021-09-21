@@ -20,5 +20,5 @@ jobs:
         username: ${{ secrets.ACR_USER }}
         password: ${{ secrets.ACR_TOKEN }}
     - run: |
-        docker build . --file Dockerfile -t ${{ secrets.ACR_SERVER }}/vbdemo:{{ github.sha }}
-        docker push ${{ secrets.ACR_SERVER }}/vbdemo:{{ github.sha }}
+        docker build . --file Dockerfile -t ${{ secrets.ACR_SERVER }}/vbdemo:${{ github.sha }}
+        docker push ${{ secrets.ACR_SERVER }}/vbdemo:${{ github.sha }}
